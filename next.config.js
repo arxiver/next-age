@@ -5,7 +5,6 @@ const nextConfig = {
   // trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
   reactStrictMode: true,
   images: {
     loader: "akamai",
