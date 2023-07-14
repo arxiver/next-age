@@ -5,6 +5,7 @@ const nextConfig = {
   // trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
+  reactStrictMode: true,
   images: {
     loader: "akamai",
     path: "/",
