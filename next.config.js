@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  output: 'export',
   // Optional: Add a trailing slash to all paths `/about` -> `/about/`
   // trailingSlash: true,
   // Optional: Change the output directory `out` -> `dist`
@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     loader: "akamai",
     path: "/",
+    unoptimized: true
   },
+  compiler:{
+    styledComponents: true
+  }
 }
 module.exports = nextConfig
