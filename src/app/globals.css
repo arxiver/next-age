@@ -521,3 +521,193 @@ body {
 .plans-item:not(:last-child) {
   margin-right: 44px;
 }
+
+.plan-item-type-text {
+  margin-top: 100px;
+  color: var(--pink, #F40F92);
+  font-size: 14px;
+  font-style: normal;
+  margin-left: 48px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.plan-item-header {
+  margin-top: 15px;
+  color: var(--deep-purple, #150136);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 48px;
+}
+
+.grad-color-2 {
+  background: radial-gradient(ellipse at center, #990091 0%, #cf0fc2 50%, #41038d 75%, #623d91 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+.plan-item-para {
+  margin-top: 15px;
+  margin-left: 48px;
+  margin-right: 50px;
+  color: var(--deep-purple, #150136);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  /* 27.2px */
+}
+
+.plan-item-content-item-header {
+  margin-left: 48px;
+  text-transform: uppercase;
+  color: var(--deep-purple, #150136);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 167%;
+  /* 26.72px */
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+}
+
+.plan-item-content-item:nth-child(2)>.plan-item-content-item-header {
+  margin-top: 20px;
+}
+
+.plan-item-content-item-point {
+  color: var(--deep-purple, #150136);
+  font-size: 16px;
+  margin-left: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.plan-item-content-item-point-text {
+  color: var(--deep-purple, #150136);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%;
+  /* 0px */
+  margin-left: 11px;
+
+}
+
+.plan-item-content-item-point:not(:first-child) {
+  margin-top: 7px;
+}
+
+
+.plan-item-content-item-header:not(:first-child) {
+  margin-top: 20px;
+}
+
+.plan-item-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+  margin-left: 48px;
+}
+
+.plan-item-footer-text {
+  display: flex;
+  align-items: center;
+}
+
+.plan-item-footer-text-content {
+  margin-left: 30px;
+  color: var(--deep-purple, #150136);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-right: 8px;
+}
+
+.plan-item-footer-btn {
+  color: var(--card, #F3EAFC);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  border-radius: 28px;
+  line-height: normal;
+  text-transform: capitalize;
+
+}
+
+.grad-color-3 {
+  background: linear-gradient(70deg, var(--purple, #F40F92) 0%, var(--purple, #cf0b7a) 80%, var(--deep-purpble, #150136) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.benefits {
+  margin-top: 54px;
+  display: inline-flexbox;
+}
+
+/* make the even only has that propery */
+.benefits-item:child(even) {
+  margin-left: 24px;
+}
+
+.benefits-item {
+  margin-bottom: 30px;
+  margin-left: 24px;
+}
+
+.benefits-item-l {
+  width: 640px;
+}
+
+.benefits-item-s {
+  width: 520px;
+}
+
+.benefits-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  height: 100px;
+  background: var(--card, #F3EAFC);
+}
+
+.benefits-item-header {
+  color: var(--deep-purple, #150136);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 30px;
+}
+
+.benefits-item-icon {
+  margin-left: 30px;
+}
+
+.benefits-item-arrow-icon {
+  position: absolute;
+  right: 20px;
+}
