@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Navbar } from '@/components/navbar/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowIcon, DiscordIcon, RedditIcon, GithubIcon } from './Icons'
 
 export default function Home() {
   return (
@@ -31,16 +33,7 @@ export default function Home() {
             <h3 className='banner-footer-text'>
               <span className='mr-2'> learn more about apache AGE </span>
               <span className='banner-footer-icon arrow-icon'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
-                  <g clip-path="url(#clip0_1_414)">
-                    <path d="M27 16L31 12M31 12L27 8M31 12L6 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_414">
-                      <rect width="24" height="37" fill="white" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 37 24)" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <ArrowIcon />
               </span>
             </h3>
           </div>
@@ -49,18 +42,156 @@ export default function Home() {
       <div className='bio'>
         <div className='bio-content'>
           <p>
-            We're <span className='bio-hl'> AGEDB</span>,
+            We&#39;re <span className='bio-hl'> AGEDB</span>,
             a company that provides enterprise-grade&nbsp;
-            <span className='bio-hl'>relational and graph databases</span>. 
+            <span className='bio-hl'>relational and graph databases</span>.
             We also offer expert&nbsp;
             <span className='bio-hl'>services</span> to manage this databases.
-            Proudly, we contribute to a top level Apache project called &nbsp;
-            <span className='bio-hl'>Apache AGE</span>,
+            Proudly, we contribute to a top level Apache project called&nbsp;<br /><span className='bio-hl'>Apache AGE</span>,
             which makes Postgres even better by adding cool&nbsp;
             <span className='bio-hl'>graph database functionality.</span>
           </p>
         </div>
       </div>
+      <div className='features'>
+        <div className='features-content'>
+          <div className='feature feature-1'>
+            <div className='feature-content'>
+              <Image className="feature-content-icon" src={"age/physics.png"} width="48" height="48" alt='arrow-icon' />
+              <div className='feature-text'>
+                <h3 className='feature-header'>Looking to Migrate from Oracle database?</h3>
+                <p className='feature-paragraph'>
+                  We offer a free migration service from Oracle to Postgres.
+                  We can also help you migrate from Oracle to AGE.
+                </p>
+                <div className='feature-footer'>
+                  <h4 className='learn-more'>Learn more</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='feature feature-2'>
+            <div className='feature-content'>
+              <div className='feature-content-icon-container'>
+                <Image className="feature-content-icon" src={"age/speed test.png"} width="48" height="48" alt='arrow-icon' />
+              </div>
+              <div className='feature-text'>
+                <h3 className='feature-header'>Need Advanced Data Analytics and Insights?</h3>
+                <p className='feature-paragraph'>
+                  Tap into your data's full potential with AGEDB's advanced analytics capabilities. Gain deep insights and make data-driven decisions effortlessly.
+                </p>
+              </div>
+              <div className='feature-footer'>
+                <h4 className='learn-more'>Learn more</h4>
+              </div>
+            </div>
+          </div>
+          <div className='feature feature-3'>
+            <div className='feature-content'>
+              <div className='feature-content-icon-container'>
+                <Image className="feature-content-icon" src={"age/medal.png"} width="48" height="48" alt='arrow-icon' />
+              </div>
+              <div className='feature-text'>
+                <h3 className='feature-header'>Seeking a Enterprise Postgres Upgrade?</h3>
+                <p className='feature-paragraph'>
+                  Experience enhanced performance, scalability, and security with AGEDB's Postgres and AgensSQL solution. Make your data management hassle-free and efficient.
+                </p>
+              </div>
+            </div>
+            <div className='feature-footer'>
+              <h4 className='learn-more'>Learn more</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='code-view'>
+        <div className='code-view-content'>
+          <div className='code-view-content-text'>
+            <h3 className='code-view-header'>What is Apache AGE?</h3>
+            <p className='code-view-paragraph'>
+              Apache AGE® is a PostgreSQL extension that provides graph database functionality. The goal of Apache AGE® is to provide graph data processing and analytics capability to all relational databases.
+            </p>
+            <button className='code-view-btn bg-pink hover:bg-pink-700 text-white font-bold rounded-full' style={{ padding: "0.95rem 1.6rem 0.95rem 1.6rem" }}>
+              View Full Document
+            </button>
+            <div className='code-view-footer'>
+              <div className='code-view-footer-item'>
+                <span className='code-view-footer-item-icon'>
+                  <DiscordIcon />
+                </span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='code-view-footer-item-text'>Connect with developers on Discord</span>
+                  <span className='code-view-footer-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='code-view-footer-item'>
+                <span className='code-view-footer-item-icon'>
+                  <RedditIcon />
+                </span>
+                <Link href='https://www.reddit.com/r/apacheage/' style={{ display: 'flex' }}>
+                  <span className='code-view-footer-item-text'>Ask and answer on Reddit forum</span>
+                  <span className='code-view-footer-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='code-view-footer-item'>
+                <span className='code-view-footer-item-icon'>
+                  <GithubIcon />
+                </span>
+                <Link href='https://github.com/apache/age' style={{ display: 'flex' }}>
+                  <span className='code-view-footer-item-text'>Download and contribute on Github</span>
+                  <span className='code-view-footer-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='code-view-area'>
+          <div className='code-view-area-line-numbers'>
+            <div className='line-numbers'>
+              <span className='line-number'>1</span>
+              <span className='line-number'>2</span>
+              <span className='line-number'>3</span>
+              <span className='line-number'>4</span>
+              <span className='line-number'>5</span>
+              <span className='line-number'>6</span>
+              <span className='line-number'> </span>
+              <span className='line-number'> </span>
+              <span className='line-number'>7</span>
+              <span className='line-number'> </span>
+              <span className='line-number'> </span>
+              <span className='line-number'>8</span>
+            </div>
+          </div>
+          <div className='code-view-area-content'>
+            <div className='code comment'>
+              # To create an edge and set properties.
+            </div>
+            <div className='code'>
+              SELECT <span className='code-hl-sql'>*</span>  <br />
+              FROM cypher(<span className='code-hl'>'graph_name'</span>, $$ <br />
+              MATCH (a:label), (b:label) <br />
+              WHERE a.property = <span className='code-hl'>'Node A'</span> AND b.property = <br /> <span className='code-hl'>'Node B'</span> <br />
+              {`CREATE (a)-[e:RELTYPE {property:a.property +`} <br />
+              <span className='code-hl'>{`'<->'`}</span> {`+ b.property}]->(b) RETURN e`} <br />
+              $$) as (e agtype)<span className='code-hl-sql'>;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='heading'>
+        <h1>
+          Find out the most <br />
+          suitable <span className='grad-color'> AGEDB</span> plan <br />
+          for your business
+        </h1>
+      </div>
+      <div className='plans'>
+          <div className='plans-item'>
+          </div>
+          <div className='plans-item'>
+          </div>
+        </div>
     </main >
   )
 }
+

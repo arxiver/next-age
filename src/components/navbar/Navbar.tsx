@@ -9,23 +9,32 @@ type INavbarProps = {
 };
 
 const Navbar = (props: INavbarProps) => (
-  <div className="navbar-container flex flex-wrap items-center justify-between">
-    <div className='logo'>
-      <Link href="/">{props.logo}</Link>
-    </div>
+  <div className="navbar-container">
+    <div className="navbar-content flex flex-wrap items-center justify-between">
+      <div className='logo'>
+        <Link href="/">{props.logo}</Link>
+      </div>
 
-    <nav>
-      <ul className="navbar flex items-center text-xl font-medium text-purple">
-        {props.children}
-      </ul>
-    </nav>
+      <nav>
+        <ul className="navbar flex items-center text-xl font-medium text-purple">
+          {props.children}
+        </ul>
+      </nav>
+    </div>
     <style jsx>
       {`
         .navbar-container {
-          height: 80px;
-          width: 100%;
+          top: 0;
+          position: sticky;
           background: rgba(247, 240, 255, 0.60);
           backdrop-filter: blur(15px);
+          width:100vw;
+          z-index:100;
+        }
+        .navbar-content {
+          height: 80px;
+          width: 1184px;
+          margin: 0 auto;
         }
         .navbar :global(li:not(:first-child)) {
           margin-top: 0 !important;
@@ -41,6 +50,15 @@ const Navbar = (props: INavbarProps) => (
 
         .navbar :global(li:not(:last-child)) {
           margin-right: 40px; 
+        }
+        @media (prefers-color-scheme: dark) {
+          .navbar-container {
+            background: rgba(0, 0, 0, 0.60);
+            color: var(--white, #fff);            
+          }
+          .navbar :global(li) {
+          color: #F40F92;
+          }
         }
       `}
     </style>
