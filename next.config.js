@@ -6,11 +6,6 @@ const nextConfig = {
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
   reactStrictMode: true,
-  images: {
-    loader: "akamai",
-    path: "/",
-    unoptimized: true
-  },
   compiler:{
     styledComponents: true
   }
