@@ -2,7 +2,7 @@
 import { Navbar } from '@/components/navbar/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowIcon, DiscordIcon, RedditIcon, GithubIcon, RightMark, ShareIcon, FeaturesArrow, FilterIcon, SheildIcon, PresentationIcon, InteractiveIcon, LayersIcon } from './Icons'
+import { ArrowIcon, DiscordIcon, RedditIcon, GithubIcon, RightMark, ShareIcon, FeaturesArrow, FilterIcon, SheildIcon, PresentationIcon, InteractiveIcon, LayersIcon, MoreIcon, TwitterIcon, LinkedInIcon } from './Icons'
 
 export default function Home() {
   return (
@@ -301,7 +301,7 @@ export default function Home() {
           <h3 className='benefits-item-header'>Relational Database Services</h3>
           <span className='benefits-item-arrow-icon'><FeaturesArrow /></span>
         </div>
-        <div className='benefits-item benefits-item-l'>
+        <div className='benefits-item benefits-item-s'>
           <span className='benefits-item-icon'><SheildIcon /></span>
           <h3 className='benefits-item-header'>Fraud Detection System</h3>
           <span className='benefits-item-arrow-icon'><FeaturesArrow /></span>
@@ -311,7 +311,107 @@ export default function Home() {
           <h3 className='benefits-item-header'>Data Integration</h3>
           <span className='benefits-item-arrow-icon'><FeaturesArrow /></span>
         </div>
-
+        <div className='benefits-item benefits-item-xs'>
+          <span className='benefits-item-icon'><MoreIcon /></span>
+        </div>
+      </div>
+      <div className='heading'>
+        <h1 className='heading-content'>
+          Join us, <br /> let's build better
+        </h1>
+      </div>
+      <div className='headway'>
+        <div className='headway-item headway-item-1'>
+          <h5 className='headway-item-sub-header'>VANCOUVER / ON-SITE</h5>
+          <h3 className='headway-item-header'>Community Operation Manager</h3>
+          <div className='headway-item-footer'>
+            <span className='headway-item-footer-text-content'> Learn More </span>
+            <span className='headway-item-footer-icon arrow-icon'>
+              <ArrowIcon />
+            </span>
+          </div>
+        </div>
+        <div className='headway-item headway-item-2'>
+          <h5 className='headway-item-sub-header'>GLOBAL / REMOTE</h5>
+          <h3 className='headway-item-header'>Software Engineering Intern</h3>
+          <div className='headway-item-footer'>
+            <span className='headway-item-footer-text-content'> Learn More </span>
+            <span className='headway-item-footer-icon arrow-icon'>
+              <ArrowIcon />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className='help'>
+        <div className='help-content'>
+          <h2 className='help-content-header'>Have questions? We’re here to help</h2>
+          <p className='help-content-body'>We're here to listen. Your messages, opinions, and feedback are highly valued. Whether you have a question, an idea, or just want to share your thoughts, don't hesitate to reach out to us. We're all ears and ready to assist you!</p>
+        </div>
+        <div className='help-map'>
+          <Image src={"age/map.png"} width="568" height="323" alt='map' />
+        </div>
+      </div>
+      <div className='footer'>
+        <div className='footer-logo'>
+          <Image src={"age/Vector.svg"} width={144.712} height="46" alt='logo' />
+        </div>
+        <div className='footer-content'>
+          <div className='footer-content-item'>
+            <div className='footer-content-item-r'>
+              <div className='footer-content-item-c'>
+                <b className='footer-content-item-c-header'>ABOUT</b>
+                <p className='footer-content-item-c-item'>AGEDB</p>
+                <p className='footer-content-item-c-item'>Careers</p>
+                <p className='footer-content-item-c-item'>Privacy Policy</p>
+              </div>
+              <div className='footer-content-item-c'>
+                <b className='footer-content-item-c-header'>RESOURCES</b>
+                <p className='footer-content-item-c-item'>Use Cases</p>
+                <p className='footer-content-item-c-item'>Blogs</p>
+              </div>
+            </div>
+            <div className='footer-content-item-r copyright'>© 2023 Advanced Graph Enterprise Database Inc.</div>
+          </div>
+          <div className='footer-content-item'>
+            <div className='footer-content-links-list'>
+              <div className='footer-content-links-list-item'>
+                <span className='footer-content-links-list-item-icon'><TwitterIcon /></span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='footer-content-links-list-item-text'>Catch our latest updates on Twitter</span>
+                  <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='footer-content-links-list-item'>
+                <span className='footer-content-links-list-item-icon'><LinkedInIcon /></span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='footer-content-links-list-item-text'>Join our professional network on LinkedIn</span>
+                  <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='footer-content-links-list-item'>
+                <span className='footer-content-links-list-item-icon'><DiscordIcon /></span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='footer-content-links-list-item-text'>Connect with developers on Discord</span>
+                  <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='footer-content-links-list-item'>
+                <span className='footer-content-links-list-item-icon'><RedditIcon /></span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='footer-content-links-list-item-text'>Ask and answer on Reddit forum</span>
+                  <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+              <div className='footer-content-links-list-item'>
+                <span className='footer-content-links-list-item-icon'><GithubIcon /></span>
+                <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+                  <span className='footer-content-links-list-item-text'>Download and contribute on Github</span>
+                  <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main >
   )
