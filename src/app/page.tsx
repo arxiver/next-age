@@ -57,7 +57,7 @@ export default function Home() {
         <div className='features-content'>
           <div className='feature feature-1'>
             <div className='feature-content'>
-              <Image className="feature-content-icon" src={"/age/physics.png"} width="48" height="48" alt='arrow-icon' />
+              <Image className="feature-content-icon" src={"age/physics.png"} width="48" height="48" alt='arrow-icon' />
               <div className='feature-text'>
                 <h3 className='feature-header'>Looking to Migrate from Oracle database?</h3>
                 <p className='feature-paragraph'>
@@ -73,7 +73,7 @@ export default function Home() {
           <div className='feature feature-2'>
             <div className='feature-content'>
               <div className='feature-content-icon-container'>
-                <Image className="feature-content-icon" src={"/age/speed test.png"} width="48" height="48" alt='arrow-icon' />
+                <Image className="feature-content-icon" src={"age/speed test.png"} width="48" height="48" alt='arrow-icon' />
               </div>
               <div className='feature-text'>
                 <h3 className='feature-header'>Need Advanced Data Analytics and Insights?</h3>
@@ -89,7 +89,7 @@ export default function Home() {
           <div className='feature feature-3'>
             <div className='feature-content'>
               <div className='feature-content-icon-container'>
-                <Image className="feature-content-icon" src={"/age/medal.png"} width="48" height="48" alt='arrow-icon' />
+                <Image className="feature-content-icon" src={"age/medal.png"} width="48" height="48" alt='arrow-icon' />
               </div>
               <div className='feature-text'>
                 <h3 className='feature-header'>Seeking a Enterprise Postgres Upgrade?</h3>
@@ -348,12 +348,12 @@ export default function Home() {
           <p className='help-content-body'>We're here to listen. Your messages, opinions, and feedback are highly valued. Whether you have a question, an idea, or just want to share your thoughts, don't hesitate to reach out to us. We're all ears and ready to assist you!</p>
         </div>
         <div className='help-map'>
-          <Image src={"/age/map.png"} width="568" height="323" alt='map' />
+          <Image src={"age/map.png"} width="568" height="323" alt='map' />
         </div>
       </div>
       <div className='footer'>
         <div className='footer-logo'>
-          <Image src={"/age/Vector.svg"} width={144.712} height="46" alt='logo' />
+          <Image src={"age/Vector.svg"} width={144.712} height="46" alt='logo' />
         </div>
         <div className='footer-content'>
           <div className='footer-content-item'>
