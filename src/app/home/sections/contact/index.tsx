@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import './style.css';
 
 export function AGContact() {
   return <div className='help' id='contact'>
