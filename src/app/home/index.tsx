@@ -5,7 +5,7 @@ import { AGCodeview } from '@/app/home/sections/codeview';
 import { AGPlans } from '@/app/home/sections/plans';
 import { AGBenefits } from '@/app/home/sections/benefits';
 import { AGOpenings } from '@/app/home/sections/openings';
-import { AGContact } from '@/app/home/sections/contact';
+import { AGHelp } from '@/app/home/sections/help';
 import { AGFooter } from '@/app/home/sections/footer';
 import { AGNavbar } from '@/app/home/sections/navbar';
 
@@ -20,7 +20,7 @@ export default function Home() {
       <AGPlans />
       <AGBenefits />
       <AGOpenings />
-      <AGContact />
+      <AGHelp />
       <AGFooter />
     </main >
   )
