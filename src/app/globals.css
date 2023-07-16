@@ -860,8 +860,8 @@ body {
 }
 
 .footer {
-  width: 1920px;
   height: 520px;
+  width:100vw;
   margin-top: 150px;
   flex-shrink: 0;
   background: var(--card, #F3EAFC);
@@ -869,7 +869,7 @@ body {
 
 .footer-content {
   display: flex;
-  width: 100%;
+  margin-left: 368px;
 }
 
 .footer-logo {
@@ -899,10 +899,6 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-}
-
-.footer-content {
-  margin-left: 368px;
 }
 
 .footer-content-item-r {
