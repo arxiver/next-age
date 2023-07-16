@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import './Navbar.css';
+import '@/components/navbar/Navbar.css';
+
 type INavbarProps = {
   logo: ReactNode;
   children: ReactNode;
