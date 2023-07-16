@@ -13,9 +13,11 @@ export default function Home() {
         <li> <Link href={"#price"}> Price </Link> </li>
         <li> <Link href={"#company"}> Company </Link> </li>
         <li style={{ width: "130px", height: "48px", flexShrink: 0, }}>
+          <Link href={"#contact"}>
           <button className="contact-us-btn bg-pink hover:bg-pink-700 text-white font-bold rounded-full" style={{ padding: "0.95rem 1.7rem 0.95rem 1.66rem" }}>
             Contact Us
           </button>
+          </Link>
         </li>
       </Navbar>
       <div className="banner">
@@ -39,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='bio'>
+      <div className='bio' id='product'>
         <div className='bio-content'>
           <p>
             We&#39;re <span className='bio-hl'> AGEDB</span>,
@@ -53,7 +55,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='features'>
+      <div className='features' id='resources'>
         <div className='features-content'>
           <div className='feature feature-1'>
             <div className='feature-content'>
@@ -178,7 +180,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='heading'>
+      <div className='heading' id='price'>
         <h1>
           Find out the most <br />
           suitable <span className='grad-color'> AGEDB</span> plan <br />
@@ -315,7 +317,7 @@ export default function Home() {
           <span className='benefits-item-icon'><MoreIcon /></span>
         </div>
       </div>
-      <div className='heading'>
+      <div className='heading' id='company'>
         <h1 className='heading-content'>
           Join us, <br /> let's build better
         </h1>
@@ -342,7 +344,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='help'>
+      <div className='help' id='contact'>
         <div className='help-content'>
           <h2 className='help-content-header'>Have questions? We’re here to help</h2>
           <p className='help-content-body'>We're here to listen. Your messages, opinions, and feedback are highly valued. Whether you have a question, an idea, or just want to share your thoughts, don't hesitate to reach out to us. We're all ears and ready to assist you!</p>
