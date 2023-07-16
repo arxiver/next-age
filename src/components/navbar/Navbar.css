@@ -26,6 +26,7 @@
 .navbar > li:not(:last-child) {
   margin-right: 40px; 
 }
+
 @media (prefers-color-scheme: dark) {
   .navbar-container {
     background: rgba(0, 0, 0, 0.60);
