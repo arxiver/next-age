@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Wix_Madefor_Display } from 'next/font/google'
+// import { Wix_Madefor_Display } from 'next/font/google'
 import StyledJsxRegistry from './registry'
 
-const wixMadeforDisplay = Wix_Madefor_Display({ subsets: ['latin'] })
+// const wixMadeforDisplay = Wix_Madefor_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <StyledJsxRegistry>
-        <body className={wixMadeforDisplay.className}>
+        <body>
           {children}
         </body>
       </StyledJsxRegistry>
