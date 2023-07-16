@@ -1,0 +1,79 @@
+
+
+.grad-color-3 {
+  background: linear-gradient(70deg, var(--purple, #F40F92) 0%, var(--purple, #cf0b7a) 80%, var(--deep-purpble, #150136) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.benefits {
+  margin-top: 54px;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* make the even only has that propery */
+.benefits-item:nth-child(even) {
+  margin-left: 24px;
+}
+
+.benefits-item {
+  margin-bottom: 30px;
+}
+
+.benefits-item-l {
+  width: 640px;
+}
+
+.benefits-item-s {
+  width: 520px;
+}
+
+.benefits-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  height: 100px;
+  background: var(--card, #F3EAFC);
+}
+
+.benefits-item-header {
+  color: var(--deep-purple, #150136);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 30px;
+}
+
+.benefits-item-icon {
+  margin-left: 30px;
+}
+
+.benefits-item-arrow-icon {
+  position: absolute;
+  right: 20px;
+}
+
+.benefits-item-xs {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.benefits-item-xs>.benefits-item-icon {
+  margin: auto;
+}

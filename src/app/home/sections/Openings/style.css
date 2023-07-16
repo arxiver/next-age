@@ -1,0 +1,72 @@
+.heading-content {
+  color: var(--deep-purple, #150136);
+  font-size: 76px;
+  font-style: bold;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+.headway {
+  margin-top: 50px;
+  display: flex;
+}
+
+.headway-item {
+  width: 568px;
+  height: 480px;
+  border-radius: 20px;
+}
+
+.headway-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.headway-item-1 {
+  background: url('/age/headway-1.png');
+  background-size: cover;
+}
+
+
+.headway-item-2 {
+  background: url('/age/headway-2.png');
+  background-size: cover;
+}
+
+.headway-item-sub-header {
+  color: var(--white, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  margin-top: 99px;
+  font-weight: 400;
+  margin-left: 48px;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+}
+
+.headway-item-header {
+  color: var(--white, #FFF);
+  font-size: 42px;
+  font-style: normal;
+  margin-left: 48px;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 336px;
+  margin-top: 15px;
+}
+
+.headway-item-footer {
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  color: var(--white, #FFF);
+  margin-left: 48px;
+  display: flex;
+  margin-top: 65px;
+}
+
+.headway-item-footer-icon {
+  margin-left: 8px;
+}

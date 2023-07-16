@@ -1,0 +1,99 @@
+
+.features {
+  margin-top: 9.5rem;
+}
+
+.features-content {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  width: 378.67px;
+  height: 500px;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 17.619px;
+  background: var(--card, #F3EAFC);
+  display: inline-block;
+}
+
+.feature:not(:last-child) {
+  margin-right: 24.33px
+}
+
+.feature-content-icon {
+  margin-top: 50px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-header {
+  color: var(--deep-purple, #150136);
+  font-size: 28px;
+  font-style: normal;
+  margin-right: 22.67px;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 24px;
+  margin-bottom: 33px;
+}
+
+.feature-paragraph {
+  color: var(--deep-purple, #150136);
+  font-size: 18px;
+  font-style: normal;
+  width: 332px;
+  font-weight: 400;
+  margin-left: 24px;
+  line-height: 167%;
+  /* 30.06px */
+
+}
+
+.feature-footer {
+  display: flex;
+  margin-left: 24px;
+  position: absolute;
+  bottom: 51px;
+  text-transform: capitalize;
+}
+
+.learn-more {
+  color: var(--deep-purple, #150136);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.feature-footer>.learn-more {
+  border-bottom: 2px solid transparent;
+}
+
+.feature-footer:hover>.learn-more {
+  border-bottom: 2px solid var(--deep-purple, #150136);
+  cursor: default;
+}
+
+.feature-footer>.learn-more::after {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  transition-property: content;
+  right: -31px;
+  content: url('/age/small-icon.svg');
+  border-radius: 4px;
+}
+
+.feature-footer:hover>.learn-more::after {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: -40px;
+  transition: all 1s ease;
+  content: url('/age/large-icon.svg');
+  border-radius: 4px;
+}
