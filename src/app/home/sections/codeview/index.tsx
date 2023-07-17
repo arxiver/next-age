@@ -44,36 +44,40 @@ export function AGCodeview() {
         </div>
       </div>
     </div>
-    <div className='code-view-area'>
-      <div className='code-view-area-line-numbers'>
-        <div className='line-numbers'>
-          <span className='line-number'>1</span>
-          <span className='line-number'>2</span>
-          <span className='line-number'>3</span>
-          <span className='line-number'>4</span>
-          <span className='line-number'>5</span>
-          <span className='line-number'>6</span>
-          <span className='line-number'> </span>
-          <span className='line-number'> </span>
-          <span className='line-number'>7</span>
-          <span className='line-number'> </span>
-          <span className='line-number'> </span>
-          <span className='line-number'>8</span>
-        </div>
+    <CodeArea />
+  </div>;
+}
+
+function CodeArea() {
+  return <div className='code-view-area'>
+    <div className='code-view-area-line-numbers'>
+      <div className='line-numbers'>
+        <span className='line-number'>1</span>
+        <span className='line-number'>2</span>
+        <span className='line-number'>3</span>
+        <span className='line-number'>4</span>
+        <span className='line-number'>5</span>
+        <span className='line-number'>6</span>
+        <span className='line-number'> </span>
+        <span className='line-number'> </span>
+        <span className='line-number'>7</span>
+        <span className='line-number'> </span>
+        <span className='line-number'> </span>
+        <span className='line-number'>8</span>
       </div>
-      <div className='code-view-area-content'>
-        <div className='code comment'>
-          # To create an edge and set properties.
-        </div>
-        <div className='code'>
-          SELECT <span className='code-hl-sql'>*</span>  <br />
-          FROM cypher(<span className='code-hl'>&#39;graph_name&#39;</span>, $$ <br />
-          MATCH (a:label), (b:label) <br />
-          WHERE a.property = <span className='code-hl'>&#39;Node A&#39;</span> AND b.property = <br /> <span className='code-hl'>&#39;Node B&#39;</span> <br />
-          {`CREATE (a)-[e:RELTYPE {property:a.property +`} <br />
-          <span className='code-hl'>{`'<->'`}</span> {`+ b.property}]->(b) RETURN e`} <br />
-          $$) as (e agtype)<span className='code-hl-sql'>;</span>
-        </div>
+    </div>
+    <div className='code-view-area-content'>
+      <div className='code comment'>
+        # To create an edge and set properties.
+      </div>
+      <div className='code'>
+        SELECT <span className='code-hl-sql'>*</span>  <br />
+        FROM cypher(<span className='code-hl'>&#39;graph_name&#39;</span>, $$ <br />
+        MATCH (a:label), (b:label) <br />
+        WHERE a.property = <span className='code-hl'>&#39;Node A&#39;</span> AND b.property = <br /> <span className='code-hl'>&#39;Node B&#39;</span> <br />
+        {`CREATE (a)-[e:RELTYPE {property:a.property +`} <br />
+        <span className='code-hl'>{`'<->'`}</span> {`+ b.property}]->(b) RETURN e`} <br />
+        $$) as (e agtype)<span className='code-hl-sql'>;</span>
       </div>
     </div>
   </div>;

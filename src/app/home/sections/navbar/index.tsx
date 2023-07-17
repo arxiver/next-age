@@ -1,6 +1,8 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
+
 import './style.css';
 
 export function AGNavbar() {
@@ -25,19 +27,27 @@ type INavbarProps = {
   children: ReactNode;
 };
 
-const Navbar = (props: INavbarProps) => (
-  <div className="navbar-container">
+
+const Navbar = (props: INavbarProps) => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  return <div className="navbar-container">
     <div className="navbar-content flex flex-wrap items-center justify-between">
       <div className='logo'>
         <Link href="/">{props.logo}</Link>
+        <div className="navbar-toggle" onClick={() => setNavbarOpen(!navbarOpen)}>
+          <div className="toggle-icon"></div>
+          <div className="toggle-icon"></div>
+          <div className="toggle-icon"></div>
+        </div>
       </div>
       <nav>
-        <ul className="navbar flex items-center text-xl font-medium text-purple">
+        <ul className={`navbar flex items-center text-xl font-medium text-purple navbar-list ${navbarOpen ? "responsive" : ""}`}>
           {props.children}
         </ul>
       </nav>
     </div>
   </div>
-);
+};
 
 export { Navbar };

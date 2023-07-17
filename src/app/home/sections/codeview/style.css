@@ -156,3 +156,27 @@
 .code-view-footer-item-arrow-icon {
   margin-left: 20px;
 }
+
+@media (max-width: 1184px) {
+  .code-view{
+    flex-direction:column;
+    height: auto;
+    width: 100%;
+  }
+  .code-view-content-text{
+    text-align: center;
+  }
+  .code-view-footer {
+    margin-top: 1rem;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+  }
+  .code-view-area{
+    margin: 3rem auto 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 670px) {
+
+}

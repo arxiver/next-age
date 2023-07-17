@@ -16,6 +16,12 @@
   border-radius: 17.619px;
   background: var(--card, #F3EAFC);
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .feature:not(:last-child) {
@@ -96,4 +102,16 @@
   transition: all 1s ease;
   content: url('/age/large-icon.svg');
   border-radius: 4px;
+}
+
+@media (max-width: 1184px) {
+  .features-content{
+    flex-wrap: wrap;
+  }
+  .feature{
+    margin-top:20px;
+  }
+}
+@media (max-width: 670px) {
+ 
 }

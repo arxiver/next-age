@@ -8,6 +8,7 @@ import { AGOpenings } from '@/app/home/sections/openings';
 import { AGHelp } from '@/app/home/sections/help';
 import { AGFooter } from '@/app/home/sections/footer';
 import { AGNavbar } from '@/app/home/sections/navbar';
+// import { AGContact } from '@/app/home/sections/contact';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <AGBenefits />
       <AGOpenings />
       <AGHelp />
+      {/* <AGContact /> */}
       <AGFooter />
     </main >
   )

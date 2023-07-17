@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './style.css';
 import { ArrowIcon } from '@/app/Icons';
 
@@ -15,10 +16,12 @@ export function AGBanner() {
           Contact Us
         </button>
         <h3 className='banner-footer-text'>
-          <span className='mr-2'> learn more about apache AGE </span>
-          <span className='banner-footer-icon arrow-icon'>
-            <ArrowIcon />
-          </span>
+          <Link href='/' style={{display:"flex"}}>
+            <span className='mr-2'> learn more about apache AGE </span>
+            <span className='banner-footer-icon arrow-icon'>
+              <ArrowIcon />
+            </span>
+          </Link>
         </h3>
       </div>
     </div>

@@ -44,3 +44,22 @@
   line-height: 160%;
   /* 73.6px */
 }
+
+@media (max-width: 1184px) {
+
+}
+@media (max-width: 670px) {
+  .bio {
+    margin-top: 6.5rem;
+    width: 90%;
+  }
+  .bio-hl {
+    font-size: 36px;
+  }
+  .bio-content {
+    font-size: 36px;
+  }
+  .bio {
+    text-align: center;
+  }
+}

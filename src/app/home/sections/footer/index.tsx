@@ -29,14 +29,14 @@ export function AGFooter() {
         <div className='footer-content-links-list'>
           <div className='footer-content-links-list-item'>
             <span className='footer-content-links-list-item-icon'><TwitterIcon /></span>
-            <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+            <Link href='https://twitter.com/apache_age' style={{ display: 'flex' }}>
               <span className='footer-content-links-list-item-text'>Catch our latest updates on Twitter</span>
               <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
             </Link>
           </div>
           <div className='footer-content-links-list-item'>
             <span className='footer-content-links-list-item-icon'><LinkedInIcon /></span>
-            <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+            <Link href='https://www.linkedin.com/showcase/apache-age/' style={{ display: 'flex' }}>
               <span className='footer-content-links-list-item-text'>Join our professional network on LinkedIn</span>
               <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
             </Link>
@@ -50,14 +50,14 @@ export function AGFooter() {
           </div>
           <div className='footer-content-links-list-item'>
             <span className='footer-content-links-list-item-icon'><RedditIcon /></span>
-            <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+            <Link href='https://www.reddit.com/r/apacheage/' style={{ display: 'flex' }}>
               <span className='footer-content-links-list-item-text'>Ask and answer on Reddit forum</span>
               <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
             </Link>
           </div>
           <div className='footer-content-links-list-item'>
             <span className='footer-content-links-list-item-icon'><GithubIcon /></span>
-            <Link href='https://discord.com/invite/NMsBs9X8Ss' style={{ display: 'flex' }}>
+            <Link href='https://github.com/apache/age' style={{ display: 'flex' }}>
               <span className='footer-content-links-list-item-text'>Download and contribute on Github</span>
               <span className='footer-content-links-list-item-arrow-icon'> <ArrowIcon color='#150136' /></span>
             </Link>

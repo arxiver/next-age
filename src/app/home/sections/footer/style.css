@@ -9,12 +9,12 @@
 
 .footer-content {
   display: flex;
-  margin-left: 368px;
+  margin-left: min(368px, 20vw);
 }
 
 .footer-logo {
   margin-top: 32px;
-  margin-left: 368px;
+  margin-left: min(368px, 20vw);;
 }
 
 .footer-content-item-r:first-child {
@@ -90,4 +90,65 @@
 
 .footer-content-links-list-item-arrow-icon{
   margin-left: 14px;
+}
+
+
+@media (max-width: 1184px) {
+  .footer-content-links-list {
+    margin-left: 60px;
+  }
+}
+/* Use media queries to adjust styles at different screen sizes */
+@media (max-width: 670px) {
+  .footer-logo {
+    justify-content: center;
+    display: flex;
+  }
+  .footer {
+    width:unset;
+    height: unset;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:0px;
+  }
+
+  .footer-logo {
+    margin-top: 3.2rem;
+    margin-left: 0;
+    order: 1;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .footer-content-item-r:first-child {
+    margin-top: 3.2rem;
+  }
+
+  .footer-content-item-r:nth-child(2) {
+    margin-top: 3.2rem;
+  }
+
+  .footer-content-item-c {
+    font-size: 1.2rem;
+  }
+
+  .footer-content-item-c-header {
+    font-size: 1.2rem;
+  }
+
+  .footer-content-item-c:first-child {
+    margin-right: 0;
+  }
+
+  .footer-content-item-c-item:not(:first-child) {
+    margin-top: 1.0rem;
+  }
+
+  .footer-content-links-list {
+    margin: 3.2rem 1.0rem 3.2rem 1.0rem;
+    font-size: 1.2rem; 
+    text-align: center;
+  }
 }
