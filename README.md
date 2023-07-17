@@ -1,8 +1,19 @@
-[![Deploy Next.js site to Pages](https://github.com/rrrokhtar/next-age/actions/workflows/nextjs.yml/badge.svg)](https://github.com/rrrokhtar/next-age/actions/workflows/nextjs.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+Install [Node.js](https://nodejs.org/en/) and [pnpm](https://pnpm.io/).
+
+Then, install the dependencies:
+
+```bash
+pnpm install
+# or
+yarn install
+# or
+npm install
+```
+
 
 First, run the development server:
 
