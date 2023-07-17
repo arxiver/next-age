@@ -47,7 +47,7 @@ const benefits = [
   },
   {
     icon: <MoreIcon />,
-    header: "More",
+    header: "",
     size: "xs",
   },
 ]
