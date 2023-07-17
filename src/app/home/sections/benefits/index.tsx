@@ -56,7 +56,7 @@ function BenefitsItem({ icon, header, size }: { icon: JSX.Element, header: strin
   return <div className={`benefits-item benefits-item-${size}`}>
     <span className='benefits-item-icon'>{icon}</span>
     <h3 className='benefits-item-header'>{header}</h3>
-    {size !== 'xs ' && <span className='benefits-item-arrow-icon'><FeaturesArrow /></span>}
+    {size !== 'xs' && <span className='benefits-item-arrow-icon'><FeaturesArrow /></span>}
   </div>;
 }
 
