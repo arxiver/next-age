@@ -73,10 +73,6 @@
   margin-left: 20px;
 }
 
-.benefits-item-xs>.benefits-item-icon {
-  margin: auto;
-}
-
 .benefits-item:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
